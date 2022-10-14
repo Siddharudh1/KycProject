@@ -2,27 +2,35 @@ package com.sixdee.application.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.persistence.Id;
+
+
 @Entity
-@Table(name="SD_KYC_GROUPS")
-public class SdKycGroups {
+@Table(name = "SD_KYC_GROUPS")
+
+public class SdKycGroups 
+{
 	@Id
-	@Column(name="ID")
+	@Column(name = "ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name="GROUP_NAME")
+	@Column(name = "GROUP_NAME")
 	private String groupName;
 	
-	@Column(name="LABEL")
+	@Column(name = "LABEL")
 	private String label;
 	
-	@Column(name="GROUP_ORDER")
+	@Column(name = "GROUP_ORDER")
 	private int groupOrder;
 	
-	@Column(name="PARENT")
+	@Column(name = "PARENT")
 	private int parent;
 
+	
 	public int getId() {
 		return id;
 	}
@@ -78,9 +86,10 @@ public class SdKycGroups {
 
 	@Override
 	public String toString() {
-		return "SdKycGroup [id=" + id + ", groupName=" + groupName + ", label=" + label + ", groupOrder=" + groupOrder
+		return "SdKycGroups [id=" + id + ", groupName=" + groupName + ", label=" + label + ", groupOrder=" + groupOrder
 				+ ", parent=" + parent + "]";
 	}
+
 	
 	
 }

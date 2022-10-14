@@ -2,21 +2,20 @@ package com.sixdee.application.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
 import javax.persistence.Table;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 
 @Entity
-@Table(name="SD_KYC_FIELD_TYPES")
-public class SdKycFieldTypes {
+@Table(name = "SD_KYC_FIELD_TYPES")
+
+public class SdKycFieldTypes 
+{
 	@Id
-	@Column(name="ID")
+	@Column(name = "ID")
 	private int id;
 	
-	@Column(name="NAME")
+	@Column(name = "NAME")
 	private String name;
 
 	public int getId() {
@@ -35,11 +34,6 @@ public class SdKycFieldTypes {
 		this.name = name;
 	}
 
-	@Override
-	public String toString() {
-		return "SdKycFieldTypes [Id=" + id + ", name=" + name + "]";
-	}
-
 	public SdKycFieldTypes(int id, String name) {
 		super();
 		this.id = id;
@@ -49,5 +43,12 @@ public class SdKycFieldTypes {
 	public SdKycFieldTypes() {
 		super();
 	}
+
+	@Override
+	public String toString() {
+		return "SdKycFieldTypes [id=" + id + ", name=" + name + "]";
+	}
+
+	
 	
 }

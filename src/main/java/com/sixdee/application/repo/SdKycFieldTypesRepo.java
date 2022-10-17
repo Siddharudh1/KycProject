@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 import com.sixdee.application.entity.SdKycFieldTypes;
 
 @Repository
-public interface SdKycFieldTypesRepo extends JpaRepository<SdKycFieldTypes, Byte>{
+public interface SdKycFieldTypesRepo extends JpaRepository<SdKycFieldTypes, Integer>{
+
 
 }

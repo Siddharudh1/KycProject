@@ -12,14 +12,13 @@ public class SdKycGroupServicesimpl implements SdKycGroupServices{
 	private SdKycGroupRepo repo;
 
 	@Override
-	public void delete(byte Id) {
-		repo.findById(Id).orElseThrow(null);
-		repo.deleteById(Id);
+	public SdKycGroups add(SdKycGroups sdGrpup) {
+		return repo.save(sdGrpup);
 	}
 
 	@Override
-	public SdKycGroups add(SdKycGroups sdGrpup) {
-		return repo.save(sdGrpup);
+	public void delete(int id) {
+		repo.deleteById(id);
 	}
 
 }

@@ -5,6 +5,5 @@ import org.springframework.stereotype.Repository;
 
 import com.sixdee.application.entity.SdKycGroups;
 @Repository
-public interface SdKycGroupRepo extends JpaRepository<SdKycGroups, Byte>{
-	
+public interface SdKycGroupRepo extends JpaRepository<SdKycGroups, Integer>{
 }

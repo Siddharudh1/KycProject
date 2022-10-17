@@ -22,9 +22,9 @@ public class SdKycFieldTypesServicesimpl implements SdKycFieldTypesServices{
 	}
 
 	@Override
-	public void delete(byte Id) {
-		repo.findById(Id).orElseThrow(null);
-		repo.deleteById(Id);
+	public void delete(int id) {
+		repo.deleteById(id);
 	}
-
+	
+	
 }

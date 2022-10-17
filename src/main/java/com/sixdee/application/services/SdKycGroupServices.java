@@ -6,6 +6,5 @@ import com.sixdee.application.entity.SdKycGroups;
 @Service
 public interface SdKycGroupServices {
 	SdKycGroups add(SdKycGroups sdGrpup);
-	void delete(byte Id);
-	
+	void delete(int id);
 }

@@ -6,5 +6,5 @@ import com.sixdee.application.entity.SdKycFieldTypes;
 @Service
 public interface SdKycFieldTypesServices {
 	SdKycFieldTypes add(SdKycFieldTypes fieldTypes);
-	void delete(byte Id);
+	void delete(int id);
 }

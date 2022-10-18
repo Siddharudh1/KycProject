@@ -8,6 +8,6 @@ import com.sixdee.application.entity.SdKycFieldMaster;
 @Service
 public interface SdKycFieldMasterServices {
 	 SdKycFieldMaster add(SdKycFieldMaster fieldmaster);
-	 void delete(int fieldId);
+	 SdKycFieldMaster deleteMatser(int fieldId);
 	 List<SdKycFieldMaster> getAllSdKycFieldMaster(SdKycFieldMaster fieldmaster);
 }

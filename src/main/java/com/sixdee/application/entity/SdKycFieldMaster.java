@@ -16,7 +16,7 @@ import javax.persistence.Table;
 public class SdKycFieldMaster 
 {
 	@Id
-	@Column(name = "FIELD_ID")
+	@Column(name = "FIELD_ID",nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int fieldId;
 	

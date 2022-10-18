@@ -41,22 +41,16 @@ public class SdKycFieldMasterController {
 		System.out.println("Data Added.....");
 		return 0;
 	}
-	/*@DeleteMapping("deleteSdKycFieldMaster/{fieldId}")
-	public ResponseEntity<SdKycFieldMaster> delete(@PathVariable("fieldId") int fieldId){
-		FieldMasterServices.delete(fieldId);
-		System.out.println("Data Deleted.....");
-		return new ResponseEntity<SdKycFieldMaster>(HttpStatus.OK);
-	}*/
 	@DeleteMapping("deleteSdKycFieldMaster/{fieldId}")
-	public int delete(@PathVariable("fieldId") int fieldId) {
-		FieldMasterServices.delete(fieldId);
-		System.out.println("Data deleted.....");
-		return 0;
-		
+	public ResponseEntity<SdKycFieldMaster> deleteMaster(@PathVariable("fieldId") int fieldId){
+		System.out.println("Data Deleted.....");
+		return new ResponseEntity<SdKycFieldMaster>(FieldMasterServices.deleteMatser(fieldId), HttpStatus.OK);
 	}
+
 	@GetMapping("/getAllSdKycFieldMaster")
 	public List<SdKycFieldMaster> getAllSdKycFieldMaster(){
 		System.out.println("Data feteched.....");
 		return repo.findAll();
 	}
+
 }

@@ -14,7 +14,7 @@ import javax.persistence.Id;
 public class SdKycGroups 
 {
 	@Id
-	@Column(name = "ID")
+	@Column(name = "ID",nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
@@ -79,19 +79,16 @@ public class SdKycGroups
 		this.groupOrder = groupOrder;
 		this.parent = parent;
 	}
-
+	
 	public SdKycGroups() {
 		super();
 	}
-
+	
 	@Override
 	public String toString() {
 		return "SdKycGroups [id=" + id + ", groupName=" + groupName + ", label=" + label + ", groupOrder=" + groupOrder
 				+ ", parent=" + parent + "]";
-	}
-
-	
-	
+	}	
 }
 
 	

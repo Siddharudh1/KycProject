@@ -26,19 +26,19 @@ public class SdKycFieldMasterServicesimpl implements SdKycFieldMasterServices{
 	}
 
 
-	@Override
-	public void delete(int fieldId) {
-		// TODO Auto-generated method stub
-		repo.findById(fieldId).orElseThrow(null);
-		repo.deleteById(fieldId);
-		
-	}
-
 
 	@Override
 	public List<SdKycFieldMaster> getAllSdKycFieldMaster(SdKycFieldMaster fieldmaster) {
 		// TODO Auto-generated method stub
 		return repo.findAll();
+	}
+
+
+	@Override
+	public SdKycFieldMaster deleteMatser(int fieldId) {
+		// TODO Auto-generated method stub
+		repo.deleteById(fieldId);
+		return null;
 	}
 
 }

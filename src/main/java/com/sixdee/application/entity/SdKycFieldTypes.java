@@ -2,17 +2,17 @@ package com.sixdee.application.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Table;
 import javax.persistence.Id;
 
 @Entity
 @Table(name = "SD_KYC_FIELD_TYPES")
-
 public class SdKycFieldTypes 
 {
 	@Id
-	@Column(name = "ID")
+	@Column(name = "ID",nullable = false)
 	private int id;
 	
 	@Column(name = "NAME")

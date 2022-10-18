@@ -7,5 +7,4 @@ import com.sixdee.application.entity.SdKycFieldTypes;
 @Repository
 public interface SdKycFieldTypesRepo extends JpaRepository<SdKycFieldTypes, Integer>{
 
-
 }

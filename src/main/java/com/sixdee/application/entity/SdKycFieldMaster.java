@@ -110,13 +110,10 @@ public class SdKycFieldMaster
 	public SdKycFieldMaster() {
 		super();
 	}
-
 	@Override
 	public String toString() {
 		return "SdKycFieldMaster [fieldId=" + fieldId + ", fieldName=" + fieldName + ", fieldType=" + fieldType
 				+ ", tagType=" + tagType + ", dropDown=" + dropDown + ", fieldTypes=" + fieldTypes + ", kycGroups="
 				+ kycGroups + "]";
 	}
-
-	
 }

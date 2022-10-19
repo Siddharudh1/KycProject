@@ -25,11 +25,7 @@ public class SdKycFieldMasterController {
 	private SdKycFieldMasterServices FieldMasterServices;
 	@Autowired
 	private SdKycFieldMasterRepo repo;
-
-	public SdKycFieldMasterController(SdKycFieldMasterServices fieldMasterServices) {
-		super();
-		FieldMasterServices = fieldMasterServices;
-	}
+	
 	/*@PostMapping("/addSdKycFieldMaster")
 	public ResponseEntity<SdKycFieldMaster> add(@RequestBody SdKycFieldMaster fieldmaster){
 		System.out.println("Details Added.....");
